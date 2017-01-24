@@ -1,0 +1,15 @@
+.note-card {
+    background-color: #EEE;
+    box-shadow: 1px 1px 5px #555;
+    color: #333;
+    font-family:  'Roboto Slab', Merriweather, Cambria, Charter, serif;
+
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 3px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+}
