@@ -19,4 +19,9 @@ export class NotesComponent {
         console.log(`Note deleted: `, i);
     }
 
+    onCreateNote(note){
+        this.notes.push(note);
+        console.log(`Created note ${note}`);
+    }
+
 }

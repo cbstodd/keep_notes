@@ -1,6 +1,6 @@
 .note-card {
     background-color: #EEE;
-    box-shadow: 1px 1px 1px 1px #555;
+    box-shadow: 0 1px 1px #555;
     color: #333;
     font-family: 'Roboto Slab', Merriweather, Cambria, Charter, serif;
     margin:4px;
@@ -10,7 +10,7 @@
 
 .note-card:hover {
     background-color: #EEE;
-    box-shadow: 1px 1px 5px #555;
+    box-shadow: 1px 1px 5px #738c55;
     color: #333;
     font-family: 'Roboto Slab', Merriweather, Cambria, Charter, serif;
 }
