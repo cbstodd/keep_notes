@@ -1,9 +1,18 @@
 .note-card {
     background-color: #EEE;
+    box-shadow: 1px 1px 1px 1px #555;
+    color: #333;
+    font-family: 'Roboto Slab', Merriweather, Cambria, Charter, serif;
+    margin:4px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.note-card:hover {
+    background-color: #EEE;
     box-shadow: 1px 1px 5px #555;
     color: #333;
-    font-family:  'Roboto Slab', Merriweather, Cambria, Charter, serif;
-
+    font-family: 'Roboto Slab', Merriweather, Cambria, Charter, serif;
 }
 
 hr {
@@ -12,4 +21,17 @@ hr {
     border: 3px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #fff;
+}
+
+.fa-check-square-o {
+    float: right;
+    color: #738c55;
+    margin-right: 5px;
+}
+
+p.title {
+    padding: 20px 10px 10px 5px;
+}
+p.value {
+    padding: 5px 10px 10px 10px;
 }

@@ -4,15 +4,15 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { ContainerComponent } from './container/container.component';
+import { NotesComponent } from './notes/notes.component';
 import { NavbarComponent } from './ui/navbar/navbar.component';
 import { NoteCardComponent } from './ui/note-card/note-card.component';
-import { NotesComponent } from './container/notes/notes.component';
+import { NotesService } from './notes/notes.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContainerComponent,
+    NotesComponent,
     NavbarComponent,
     NoteCardComponent,
     NotesComponent
@@ -22,7 +22,7 @@ import { NotesComponent } from './container/notes/notes.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [NotesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

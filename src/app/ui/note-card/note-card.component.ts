@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector: 'k-note-card',
@@ -7,17 +7,22 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class NoteCardComponent implements OnInit {
 
-    @Input() note = {};
-
     constructor() {
+    }
+
+    @Input() note;
+    @Output() marked = new EventEmitter();
+
+    showMark:boolean = false;
+
+    toggleCheck() {
+        this.showMark = !this.showMark;
+    }
+
+    onMarked() {
+        this.marked.next(this.note);
     }
 
     ngOnInit() {
     }
-
-    onCheck() {
-        console.log(`Checkbox has been clicked`);
-    }
-
-
 }

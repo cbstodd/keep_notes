@@ -1,7 +1,7 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async } from '@angular/core/testing';
-import { ContainerComponent } from './container.component';
+import { ContainerComponent } from './notes.component';
 
 describe('Component: Container', () => {
   it('should create an instance', () => {

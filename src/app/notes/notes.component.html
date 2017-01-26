@@ -1,0 +1,21 @@
+<!-- * NOTES * -->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <h3>Create notes:</h3>
+            <!-- * Input component is going to go here * -->
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-sm-12">
+        <k-note-card
+          [note]="note"
+          *ngFor="let note of notes; let i=index"
+          (marked)="onNoteMarked()"><!-- * clicks on marked event emitter calls onNoteMarked fn * -->
+        </k-note-card>
+    </div>
+</div>
