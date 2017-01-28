@@ -15,13 +15,12 @@ export class NotesComponent {
     }
 
     onNoteMarked(i:number){
-        this.notes.splice(i, 1);
-        console.log(`Note deleted: `, i);
+        this.notes.splice(1, i);
     }
 
     onCreateNote(note){
         this.notes.push(note);
-        console.log(`Created note ${note}`);
+        console.log(`Created note >>---))>`, note);
     }
 
 }

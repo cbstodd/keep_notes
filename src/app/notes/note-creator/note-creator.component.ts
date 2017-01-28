@@ -11,14 +11,16 @@ export class NoteCreatorComponent {
     
     newNote = {
         title: '',
-        value: ''
+        value: '',
+        color: '#555555'
     };
 
     onCreateNote() {
-        const { title, value } = this.newNote;
+        const { title, value, color } = this.newNote;
 
         if (title && value) {
-            this.createNote.next({ title, value });
+            this.createNote.next({ title, value, color });
+            console.log(`title: ${title}, value: ${value}, color: ${color}`);
         }
 
         this.reset();
@@ -28,7 +30,8 @@ export class NoteCreatorComponent {
     reset() {
         this.newNote = {
             title: '',
-            value: ''
+            value: '',
+            color: ''
         }
     }
 
@@ -36,6 +39,15 @@ export class NoteCreatorComponent {
 
     toggleView(value:boolean){
         this.fullForm = value;
+    }
+
+    // COLOR PICKER
+    colors:string[] = ['#dd1111', '#118ad6', '#40B771', '#F3B215', '#ffffff'];
+
+    // SETS THE COLOR PASSED ONTO ngStyle WHEN SELECTED
+    onColorSelect(color:string){
+        this.newNote.color = color;
+
     }
 
 }

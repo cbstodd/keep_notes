@@ -5,9 +5,10 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NotesComponent } from './notes/notes.component';
 import { NavbarComponent } from './ui/navbar/navbar.component';
-import { NoteCardComponent } from './note-card/note-card.component';
+import { NoteCardComponent } from './notes/note-card/note-card.component';
 import { NotesService } from './notes/notes.service';
-import { NoteCreatorComponent } from './note-creator/note-creator.component';
+import { NoteCreatorComponent } from './notes/note-creator/note-creator.component';
+import { ColorPickerComponent } from './notes/color-picker/color-picker.component';
 
 @NgModule({
     declarations: [
@@ -16,7 +17,8 @@ import { NoteCreatorComponent } from './note-creator/note-creator.component';
         NavbarComponent,
         NoteCardComponent,
         NotesComponent,
-        NoteCreatorComponent
+        NoteCreatorComponent,
+        ColorPickerComponent
     ],
     imports: [
         BrowserModule,

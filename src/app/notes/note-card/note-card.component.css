@@ -1,7 +1,7 @@
 .note-card {
     background-color: #EEE;
     box-shadow: 0 1px 1px #555;
-    color: #333;
+    color: #666;
     font-family: 'Roboto Slab', Merriweather, Cambria, Charter, serif;
     margin:4px;
     border-top: 1px solid #fff;
@@ -11,7 +11,7 @@
 .note-card:hover {
     background-color: #EEE;
     box-shadow: 1px 1px 5px #738c55;
-    color: #333;
+    color: #555;
     font-family: 'Roboto Slab', Merriweather, Cambria, Charter, serif;
 }
 
@@ -29,9 +29,11 @@ hr {
     margin-right: 5px;
 }
 
-p.title {
-    padding: 20px 10px 10px 5px;
+h4.title {
+    padding: 18px 0 0 0;
+    text-align: center;
 }
 p.value {
     padding: 5px 10px 10px 10px;
+    text-align: left;
 }
