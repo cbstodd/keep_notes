@@ -15,7 +15,7 @@ export class NotesComponent {
     }
 
     onNoteMarked(i:number){
-        this.notes.splice(1, i);
+        this.notes.splice(i, 1);
     }
 
     onCreateNote(note){
