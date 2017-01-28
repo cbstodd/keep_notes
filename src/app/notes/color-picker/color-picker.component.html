@@ -1,6 +1,10 @@
 <div class="color-selector">
     <!-- * when clicked it uses showselc fun to turn isSelVis to true * -->
-    <i class="fa fa-paint-brush fa-lg" (click)="showSelector(true);"></i>
+    <i class="fa fa-paint-brush fa-lg"
+      data-toggle="tooltip"
+      data-placement="left"
+      title="Pick font color"
+      (click)="showSelector(true);"></i>
 
     <div class="selector row center-xs" *ngIf="isSelectorVisible">
         <div class="color"
@@ -8,5 +12,6 @@
           (click)="selectColor(color)"
           [ngStyle]="{'background-color':color}">
         </div>
+        <span class="default">default</span>
     </div>
 </div>

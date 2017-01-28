@@ -42,7 +42,7 @@ export class NoteCreatorComponent {
     }
 
     // COLOR PICKER
-    colors:string[] = ['#dd1111', '#118ad6', '#40B771', '#F3B215', '#ffffff'];
+    colors:string[] = ['#dd1111', '#118ad6', '#40B771', '#F3B215', '#555555'];
 
     // SETS THE COLOR PASSED ONTO ngStyle WHEN SELECTED
     onColorSelect(color:string){
